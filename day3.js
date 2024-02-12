@@ -145,32 +145,32 @@
 // Write a code that shows 1 if the input is a string, 2 if the input is a number, and 3 for others data type.
 // ○ Example : “hello” → 1
 
-let input = "hello";
-let result = "";
+// let input = "hello";
+// let result = "";
 
-if (typeof input === "string"){
-    result = 1;
-}else if (typeof input === "number"){
-    result = 2;
-}else {
-    result = 3;
-}
-console.log(result);
-console.log(input + " -> " + result);
+// if (typeof input === "string"){
+//     result = 1;
+// }else if (typeof input === "number"){
+//     result = 2;
+// }else {
+//     result = 3;
+// }
+// console.log(result);
+// console.log(input + " -> " + result);
 
 // NO 12
 // Write a code to change every letter a into * from a string of input
 // ○ Example : ‘An apple a day keeps the doctor away’ -> `*n *pple * d*y keeps the doctor *w*y
 
-// const str = "An Apple a day keeps the doctor away";
-// const modifiedStr = "*";
-// let result = "";
+const str = "An Apple a day keeps the doctor away";
+const modifiedStr = "*";
+let result = "";
 
-// for (let i = 0; i < str.length; i++){
-//     if (str[i] === 'a' || str[i] === 'A'){
-//         result += modifiedStr;
-//     } else {
-//         result += str[i];
-//     }
-// }
-// console.log(result);
+for (let i = 0; i < str.length; i++){
+    if (str[i] === 'a' || str[i] === 'A'){
+        result += modifiedStr;
+    } else {
+        result += str[i];
+    }
+}
+console.log(result);
