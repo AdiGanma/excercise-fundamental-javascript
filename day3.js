@@ -17,7 +17,28 @@
 // Write a code to check whether a string is a palindrome or not.
 // ○ Example : ‘madam’ → palindrome
 
-// const palindrome = "sadam";
+// build in method
+
+// const kata = "madam";
+// const isPalindrome = kata === kata.split("").reverse().join("");
+
+// console.log(kata.split(""));
+// console.log(kata.split("").reverse());
+// console.log(kata.split("").reverse().join(""));
+// console.log(isPalindrome);
+
+// tanpa build in method
+
+// const kata = "madam";
+// let reverse = "";
+
+// for (let i = kata.length - 1; i >= 0; i--){
+//     reverse += kata[i];
+//     console.log(kata[i]);
+// }
+// console.log(reverse);
+
+// const palindrome = "madam";
 // let result = true;
 // let j = palindrome.length -1;
 
@@ -28,7 +49,7 @@
 //     }
 //     j--;
 // }
-// console.log(result === true ? "palindrome" : "not palindrom");
+// console.log(result === true ? "palindrome" : "not palindrome");
 
 // // NO 3
 // Write a code to convert centimeter to kilometer.
@@ -54,6 +75,13 @@
 // ○ Example : string = “Hello world”, search string = “ell” → “Ho world”
 
 // const kata = "Hello World";
+// const search = "ell";
+// const replaceWith = "";
+
+// const remove = kata.replace(search, replaceWith);
+// console.log(remove);
+
+// const kata = "Hello World";
 // const searchkata = "ell";
 // const indexofkata = kata.indexOf(searchkata);
 // const endidx = indexofkata + searchkata.length;
@@ -64,6 +92,18 @@
 // NO 6
 // Write a code to capitalize the first letter of each word in a string
 // ○ Example : “hello world” → “Hello World”
+
+// const input = "hello world";
+// let words = input.split(" ");
+
+// console.log(words);
+
+// for (let i = 0; i < words.length; i++){
+//     words[i] = words[i][0].toUpperCase() + words[i].slice(1);
+// }
+
+// console.log(words);
+// console.log(words.join(" "));
 
 // const reversword = "hello world";
 // const wordToArr = reversword.split(" ");
@@ -79,17 +119,39 @@
 // Write a code to reverse a string.
 // ○ Example : “hello” → “olleh”
 
+// build in method
+
+// const kata = "hello";
+// const reverse = kata.split("").reverse().join("");
+// console.log(kata + " -> " + reverse);
+
+// tanpa build in method
+
 // const word = "hello";
-// const end = word.length -1;
 // let newStr = "";
-// for (let i = end; i >= 0; i--){
-//     newStr = word[i];
+// for (let i = word.length -1; i >= 0; i--){
+//     newStr += word[i];
 //     console.log(newStr);
 // }
+// console.log(newStr);
 
 // NO 8
 // Write a code to swap the case of each character from string 
 // ○ Example : ‘The QuiCk BrOwN Fox’ -> ‘ tHE qUIcK bRoWn fOX’
+
+// const inputString = "The QuiCk BrOwN Fox";
+// let swapString = "";
+
+// for (let i = 0; i < inputString.length; i++){
+//     const char = inputString[i]
+
+//     if (char === inputString[i].toUpperCase()){
+//         swapString += char.toLowerCase();
+//     }else {
+//         swapString += char.toUpperCase();
+//     }
+// }
+// console.log(swapString);
 
 // const str = 'The QuiCk BrOwN Fox';
 // const UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
@@ -114,11 +176,33 @@
 // const num1 = 42;
 // const num2 = 41;
 
+// let largest;
+
+// if (num1 > num2){
+//     largest = num1;
+// }else {
+//     largest = num2;
+// }
+// console.log(largest);
+
+// const num1 = 42;
+// const num2 = 41;
+
 // console.log(num1 > num2 ? `${num1}` + " lebih besar dari " + `${num2}` : `${num1}` + " lebih kecil dari " + `${num2}`);
 
 // NO 10
 // Write a conditional statement to sort three numbers
 // ○ Example : num1 = 42, num2 = 27, num3 = 18 → 18, 27, 42
+
+// const num1 = 42;
+// const num2 = 27;
+// const num3 = 18;
+
+// const largest = Math.max(num1,num2,num3);
+// const smallest = Math.min(num1,num2,num3);
+// const middle = num1 + num2 + num3 -smallest - largest;
+
+// console.log(`${smallest}, ${middle}, ${largest}`);
 
 // let num1 = 42;
 // let num2 = 27;
@@ -162,15 +246,29 @@
 // Write a code to change every letter a into * from a string of input
 // ○ Example : ‘An apple a day keeps the doctor away’ -> `*n *pple * d*y keeps the doctor *w*y
 
-const str = "An Apple a day keeps the doctor away";
-const modifiedStr = "*";
-let result = "";
+// const inputString = "An Apple a day keeps the doctor away".toLowerCase();
+// const replaceWord = "a";
+// let modifiedStr = "";
 
-for (let i = 0; i < str.length; i++){
-    if (str[i] === 'a' || str[i] === 'A'){
-        result += modifiedStr;
-    } else {
-        result += str[i];
-    }
-}
-console.log(result);
+// for (let i = 0; i < inputString.length; i++){
+//     if (inputString[i] === replaceWord){
+//         modifiedStr += "*";
+//     } else {
+//         modifiedStr += inputString[i];
+//     }
+// }
+
+// console.log(modifiedStr);
+
+// const str = "An Apple a day keeps the doctor away";
+// const modifiedStr = "*";
+// let result = "";
+
+// for (let i = 0; i < str.length; i++){
+//     if (str[i] === 'a' || str[i] === 'A'){
+//         result += modifiedStr;
+//     } else {
+//         result += str[i];
+//     }
+// }
+// console.log(result);
