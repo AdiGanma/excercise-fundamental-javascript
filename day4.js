@@ -164,10 +164,10 @@
 
 // BUILD IN METHOD
 
-// function removeOddNumber(arr) {
-//   return arr.filter((item) => item % 2 === 0);      // filter mereturn array baru
-// }
-// console.log(removeOddNumber([1,2,3,4,5,6,7,8,9,10]));
+function removeOddNumber(arr) {
+  return arr.filter((item) => item % 2 === 0);      // filter mereturn array baru
+}
+console.log(removeOddNumber([1,2,3,4,5,6,7,8,9,10]));
 
 // const num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 // const result = num.filter((even) => {
@@ -179,19 +179,19 @@
 
 // TANPA BUILD IN METHOD
 
-// function removeOddNumber(arr) {
-//   const evenNumbers = [];
+function removeOddNumber(arr) {
+  const evenNumbers = [];
 
-//   for (let i = 0; i < arr.length; i++) {
-//     if (arr[i] % 2 === 0) {
-//       evenNumbers.push(arr[i]);
-//     }
-//   }
-//   return evenNumbers;
-// }
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 === 0) {
+      evenNumbers.push(arr[i]);
+    }
+  }
+  return evenNumbers;
+}
 
-// const inputArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-// console.log(removeOddNumber(inputArray));
+const inputArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+console.log(removeOddNumber(inputArray));
 
 // NO 5
 // Write a function to split a string and convert it into an array of words
@@ -210,7 +210,7 @@
 //     if (input[i] == " ") {
 //       kata.push(temp);
 //       temp = "";
-//       continue;      // SKIP LOOPINGAN
+//       continue;
 //     }
 
 //     temp += input[i];
@@ -220,4 +220,4 @@
 //   return kata;
 // };
 
-// console.log(splitString("Hello World Jogja"));
+// console.log(splitString("Hello World"));
